@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-02 20:12:37
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-11-06 13:42:57
+ * @Last Modified time: 2019-11-07 21:55:51
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -44,6 +44,18 @@ var config = {
             }
         ]
     },
+    resolve: {
+        alias: {
+            node_modules: __dirname + '/node_modules',
+            utils: __dirname + '/src/utils',
+            page: __dirname + '/src/page',
+            service: __dirname + '/src/service',
+            image: __dirname + '/src/image'
+        }
+    },
+    devServer: {
+        disableHostCheck: true
+    },
     plugins: [
         //独立通用模块
         new webpack.optimize.CommonsChunkPlugin({
@@ -57,7 +69,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('login')),
     ]
 };
-if('dev' === WEBPACK_ENV){
+if ('dev' === WEBPACK_ENV) {
     config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
 }
 module.exports = config;
