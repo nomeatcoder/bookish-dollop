@@ -1,0 +1,23 @@
+/*
+* @Author: nomeatcoder
+* @Date:   2019-11-07 23:24:08
+* @Last Modified by:   nomeatcoder
+* @Last Modified time: 2019-11-07 23:24:38
+*/
+.footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.footer .links{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.footer .copyright{
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
