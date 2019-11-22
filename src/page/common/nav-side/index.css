@@ -1,0 +1,27 @@
+/*
+* @Author: nomeatcoder
+* @Date:   2019-11-14 21:53:45
+* @Last Modified by:   nomeatcoder
+* @Last Modified time: 2019-11-14 22:03:57
+*/
+/* 导航主体 */
+.nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
+}
