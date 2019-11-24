@@ -2,7 +2,7 @@
 * @Author: nomeatcoder
 * @Date:   2019-11-08 23:28:08
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-14 22:02:40
+* @Last Modified time: 2019-11-24 22:34:07
 */
 'use strict';
 require('./index.css');
@@ -27,10 +27,10 @@ var nav = {
             window.location.href = './register.html';
         });
         //退出点击事件
-        $('.js-register').click(function(){
+        $('.js-loginout').click(function(){
             _user.loginout(
             function(res){
-                window.location.reload();
+                window.location.href = './index.html';
             },function(errMsg){
                 _ajax.errorTips(errMsg);
             });

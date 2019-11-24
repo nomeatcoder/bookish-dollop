@@ -1,1 +1,0 @@
-webpackJsonp([2],[function(o,t,n){o.exports=n(6)},,,,,,function(o,t,n){"use strict";n(7),console.log("hello login")},function(o,t){"use strict";o.exports={test:1234}}]);

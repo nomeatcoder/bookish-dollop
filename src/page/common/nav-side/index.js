@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-14 21:53:51
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-11-14 22:38:37
+ * @Last Modified time: 2019-11-24 22:22:44
  */
 'use strict';
 require('./index.css');
@@ -15,7 +15,7 @@ var navSide = {
         navList: [
             { name: 'user-center', desc: '个人中心', href: './user-center.html' },
             { name: 'order-list', desc: '我的订单', href: './order-list.html' },
-            { name: 'pass-update', desc: '修改密码', href: './pass-update.html' },
+            { name: 'pass-update', desc: '修改密码', href: './user-pass-update.html' },
             { name: 'about', desc: '关于福利商城', href: './about.html' }
         ]
     },
