@@ -1,32 +1,5 @@
 /*
 * @Author: nomeatcoder
-* @Date:   2019-11-08 23:28:02
-* @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-08 23:45:55
-*/
-.nav{
-    background: #eee;
-    height: 30px;
-    line-height: 30px;
-}
-.nav .user{
-    float: left;
-}
-.nav .user.login{
-    display: none;
-}
-.nav .user .link{
-    margin-right: 5px; 
-}
-.nav .nav-list{
-    float: right;
-}
-.nav .nav-list .nav-item{
-    display: inline-block;
-    margin-left: 5px;
-     
-}/*
-* @Author: nomeatcoder
 * @Date:   2019-11-14 20:38:47
 * @Last Modified by:   nomeatcoder
 * @Last Modified time: 2019-11-14 21:27:56
@@ -70,6 +43,33 @@
     color: #888;
     font-size: 14px;
     border-top: 2px solid #c60023;
+}/*
+* @Author: nomeatcoder
+* @Date:   2019-11-08 23:28:02
+* @Last Modified by:   nomeatcoder
+* @Last Modified time: 2019-11-08 23:45:55
+*/
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user{
+    float: left;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px; 
+}
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+     
 }/*
 * @Author: nomeatcoder
 * @Date:   2019-11-26 19:33:56

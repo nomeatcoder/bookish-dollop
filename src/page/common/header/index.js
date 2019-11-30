@@ -2,7 +2,7 @@
 * @Author: nomeatcoder
 * @Date:   2019-11-14 20:38:58
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-14 21:40:36
+* @Last Modified time: 2019-11-30 23:15:42
 */
 'use strict';
 require('./index.css');
@@ -25,7 +25,7 @@ var header = {
         $('#search-btn').click(function(){
             _this.searchSubmit();
         });
-        // 输入会车后，做搜索提交
+        // 输入回车后，做搜索提交
         $('#search-input').keyup(function(e){
             // 13是回车键的keyCode
             if(e.keyCode === 13){
