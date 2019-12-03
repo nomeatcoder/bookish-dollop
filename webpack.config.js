@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-02 20:12:37
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-12-02 20:28:27
+ * @Last Modified time: 2019-12-03 22:51:32
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -30,6 +30,7 @@ var config = {
         'order-confirm': ['./src/page/order-confirm/index.js'],
         'order-list': ['./src/page/order-list/index.js'],
         'order-detail': ['./src/page/order-detail/index.js'],
+        'payment': ['./src/page/payment/index.js'],
         'user-login': ['./src/page/user-login/index.js'],
         'user-register': ['./src/page/user-register/index.js'],
         'user-pass-reset': ['./src/page/user-pass-reset/index.js'],
@@ -37,6 +38,7 @@ var config = {
         'user-center': ['./src/page/user-center/index.js'],
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'result': ['./src/page/result/index.js'],
+        'about': ['./src/page/about/index.js'],
     },
     output: {
         path: './dist',
@@ -89,13 +91,15 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm', '订单确认页')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list', '订单列表页')),
         new HtmlWebpackPlugin(getHtmlConfig('order-detail', '订单详情页')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment', '订单支持页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '密码重置')),
-        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '密码重置')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '更新密码')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('about', '关于福利商城')),
     ]
 };
 if ('dev' === WEBPACK_ENV) {

@@ -1,5 +1,32 @@
 /*
 * @Author: nomeatcoder
+* @Date:   2019-11-08 23:28:02
+* @Last Modified by:   nomeatcoder
+* @Last Modified time: 2019-11-08 23:45:55
+*/
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user{
+    float: left;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px; 
+}
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+     
+}/*
+* @Author: nomeatcoder
 * @Date:   2019-11-14 20:38:47
 * @Last Modified by:   nomeatcoder
 * @Last Modified time: 2019-11-14 21:27:56
@@ -45,31 +72,30 @@
     border-top: 2px solid #c60023;
 }/*
 * @Author: nomeatcoder
-* @Date:   2019-11-08 23:28:02
+* @Date:   2019-11-14 21:53:45
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-08 23:45:55
+* @Last Modified time: 2019-11-14 22:03:57
 */
-.nav{
-    background: #eee;
-    height: 30px;
-    line-height: 30px;
-}
-.nav .user{
+/* 导航主体 */
+.nav-side{
     float: left;
+    width: 130px;
+    min-height: 100px;
 }
-.nav .user.login{
-    display: none;
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
 }
-.nav .user .link{
-    margin-right: 5px; 
+.nav-side .nav-item .link{
+    color: #888;
 }
-.nav .nav-list{
-    float: right;
+.nav-side .nav-item.active .link{
+    color: #c60023;
 }
-.nav .nav-list .nav-item{
-    display: inline-block;
-    margin-left: 5px;
-     
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
 }/*
 * @Author: nomeatcoder
 * @Date:   2019-11-05 00:03:59
@@ -240,30 +266,4 @@
 .banner .dots li.active {
     background: #fff;
     opacity: 1;
-}/*
-* @Author: nomeatcoder
-* @Date:   2019-11-14 21:53:45
-* @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-14 22:03:57
-*/
-/* 导航主体 */
-.nav-side{
-    float: left;
-    width: 130px;
-    min-height: 100px;
-}
-.nav-side .nav-item{
-    line-height: 25px;
-    font-size: 13px;
-}
-.nav-side .nav-item .link{
-    color: #888;
-}
-.nav-side .nav-item.active .link{
-    color: #c60023;
-}
-/* 右侧内容区 */
-.content.with-nav{
-    float: left;
-    width: 950px;
 }
