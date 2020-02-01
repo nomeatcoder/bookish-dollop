@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-02 20:12:37
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-12-03 22:51:32
+ * @Last Modified time: 2020-01-31 19:22:38
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -59,7 +59,7 @@ var config = {
             },
             {
                 test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=100&name=resource/[name].[ext]'
+                loader: 'url-loader?limit=1000&name=/resource/[name].[ext]'
             }
         ]
     },
