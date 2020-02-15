@@ -2,7 +2,7 @@
 * @Author: nomeatcoder
 * @Date:   2019-11-08 23:28:08
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-24 22:34:07
+* @Last Modified time: 2020-02-01 16:11:26
 */
 'use strict';
 require('./index.css');
@@ -24,7 +24,7 @@ var nav = {
         });
         //注册点击事件
         $('.js-register').click(function(){
-            window.location.href = './register.html';
+            window.location.href = './user-register.html';
         });
         //退出点击事件
         $('.js-loginout').click(function(){

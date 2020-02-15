@@ -12,5 +12,4 @@
         {{/active}}
     {{/disabled}}
     {{/pageArray}}
-    <span class="pg-total">{{pageNum}} / {{pages}}</span>
 </div>

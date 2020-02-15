@@ -1,7 +1,7 @@
 {
-  "name": "welfareshop-html",
+  "name": "welfare-html",
   "version": "1.0.0",
-  "description": "福利商城前端代码",
+  "description": "www.welfare.com",
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --inline --port 8088",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomeatcoder/welfareshop-html.git"
+    "url": "https://github.com/nomeatcoder/welfare-html.git"
   },
   "author": "Chenzhe Mao",
   "license": "ISC",

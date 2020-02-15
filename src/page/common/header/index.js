@@ -1,47 +1,49 @@
 /*
-* @Author: nomeatcoder
-* @Date:   2019-11-14 20:38:58
-* @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-30 23:15:42
-*/
+ * @Author: nomeatcoder
+ * @Date:   2019-11-14 20:38:58
+ * @Last Modified by:   nomeatcoder
+ * @Last Modified time: 2020-02-15 00:41:01
+ */
 'use strict';
 require('./index.css');
 var _ajax = require('utils/utils.js');
 var header = {
-    init : function(){
+    init: function() {
         this.onLoad();
         this.bindEvent();
     },
-    onLoad : function(){
+    onLoad: function() {
         var keyword = _ajax.getUrlParam('keyword');
         // keyword存在，则回填输入框
-        if(keyword){
+        if (keyword) {
             $('#search-input').val(keyword);
         };
     },
-    bindEvent : function(){
+    bindEvent: function() {
         var _this = this;
         // 点击搜索按钮以后，做搜索提交
-        $('#search-btn').click(function(){
+        $('#search-btn').click(function() {
             _this.searchSubmit();
         });
         // 输入回车后，做搜索提交
-        $('#search-input').keyup(function(e){
+        $('#search-input').keyup(function(e) {
             // 13是回车键的keyCode
-            if(e.keyCode === 13){
+            if (e.keyCode === 13) {
                 _this.searchSubmit();
             }
         });
     },
     // 搜索的提交
-    searchSubmit : function(){
+    searchSubmit: function() {
         var keyword = $.trim($('#search-input').val());
         // 如果提交的时候有keyword,正常跳转到list页
-        if(keyword){
-            window.location.href = './list.html?keyword=' + keyword;
+        if (keyword) {
+            var categoryId = _ajax.getUrlParam('categoryId');
+            window.location.href = './list.html?keyword=' + keyword +
+                (categoryId ? ('&categoryId=' + categoryId) : '');
         }
         // 如果keyword为空，直接返回首页
-        else{
+        else {
             _ajax.goHome();
         }
     }
