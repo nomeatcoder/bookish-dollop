@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-02 20:12:37
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2020-01-31 19:22:38
+ * @Last Modified time: 2020-02-21 19:53:42
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -39,6 +39,7 @@ var config = {
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'result': ['./src/page/result/index.js'],
         'about': ['./src/page/about/index.js'],
+        'integral-list': ['./src/page/integral-list/index.js'],
     },
     output: {
         path: './dist',
@@ -100,6 +101,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('about', '关于福利商城')),
+        new HtmlWebpackPlugin(getHtmlConfig('integral-list', '积分明细')),
     ]
 };
 if ('dev' === WEBPACK_ENV) {

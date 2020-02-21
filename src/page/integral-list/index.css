@@ -1,0 +1,54 @@
+/*
+* @Author: nomeatcoder
+* @Date:   2019-12-02 20:25:00
+* @Last Modified by:   nomeatcoder
+* @Last Modified time: 2020-02-21 20:33:15
+*/
+
+.integral-list-table{
+    width: 100%;
+    bintegral-collapse: collapse;
+    background: #fafafa;
+    margin-bottom: 20px;
+}
+.integral-list-table .cell{
+    padding: 10px 0;
+    color: #666;
+    bintegral-bottom: 1px solid #eee;
+}
+.integral-list-table.header{
+    background: #eee;
+}
+.integral-list-table .integral-info{
+    background: #eee;
+    padding: 10px;
+    color: #999;
+    text-align: center;
+}
+.integral-list-table .integral-info .integral-add{
+    color: #00CC00;
+}
+.integral-list-table .integral-info .integral-del{
+    color: #FF0000;
+}
+
+.integral-list-table .cell-username{
+    width: 15%;
+}
+
+.integral-list-table .cell-type{
+    width: 20%;
+}
+
+.integral-list-table .cell-num{
+    width: 15%;
+}
+
+.integral-list-table .cell-remain-integral{
+    width: 10%;
+}
+
+.integral-list-table .cell-create-time{
+    width: 40%;
+}
+

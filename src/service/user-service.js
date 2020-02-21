@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-14 20:49:42
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-11-24 22:32:36
+ * @Last Modified time: 2020-02-21 19:46:35
  */
 'use strict';
 var _ajax = require('utils/utils.js');
@@ -117,6 +117,15 @@ var _user = {
             method  : 'POST',
             success : resolve,
             error   : reject
+        });
+    },
+    // 获取积分记录列表
+    getIntegralList: function(listParam, resolve, reject) {
+        _ajax.request({
+            url: _ajax.getServerUrl('/manage/user/integral_list.do'),
+            data: listParam,
+            success: resolve,
+            error: reject
         });
     }
 }

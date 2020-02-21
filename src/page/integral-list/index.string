@@ -1,0 +1,38 @@
+<table class="integral-list-table header">
+    <tr>
+        <th class="cell cell-username">用户名</th>
+        <th class="cell cell-type">类型</th>
+        <th class="cell cell-num">数量</th>
+        <th class="cell cell-remain-integral">剩余积分</th>
+        <th class="cell cell-create-time">创建时间</th>
+    </tr>
+</table>
+{{#list}}
+<table class="integral-list-table integral-item">
+    <tr>
+        <td class="integral-info">
+            <span class="integral-text">{{username}}</span>
+        </td>
+        <td class="integral-info">
+            <span class="integral-text">{{type}}</span>
+        </td>
+        <td class="integral-info">
+            {{#add}}
+            <span class="integral-add">{{num}}</span>
+            {{/add}}
+            {{^add}}
+            <span class="integral-del">{{num}}</span>
+            {{/add}}
+        </td>
+        <td class="integral-info">
+            <span class="integral-text">{{remainIntegral}}</span>
+        </td>
+        <td class="integral-info">
+            <span class="integral-text">{{createTime}}</span>
+        </td>
+    </tr>
+</table>
+{{/list}}
+{{^list}}
+<p class="err-tip">您暂时还没有积分记录</p>
+{{/list}}

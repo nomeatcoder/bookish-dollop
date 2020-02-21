@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-02 18:02:38
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2020-02-19 23:16:24
+ * @Last Modified time: 2020-02-21 15:58:47
  */
 'use strict';
 require('./index.css');
@@ -29,7 +29,8 @@ var page = {
         // 请求接口
         _category.getIndex(function(res) {
             listHtml = _ajax.renderHtml(templateFloor, {
-                list: res.list
+                list        : res.list,
+                imageHost   : res.imageHost
             });
             $floorListCon.html(listHtml);
         }, function(errMsg) {

@@ -5,7 +5,7 @@
         <li class="floor-item">
             <a href="./list.html?categoryId={{id}}">
                 <span class="floor-text">{{name}}</span>
-                <img class="floor-img" src="http://image.welfare.com/{{image}}" alt="{{name}}" />
+                <img class="floor-img" src="{{imageHost}}{{image}}" alt="{{name}}" />
             </a>
         </li>
         {{/subList}}
