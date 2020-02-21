@@ -2,7 +2,7 @@
 * @Author: nomeatcoder
 * @Date:   2019-12-02 20:25:00
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-12-02 20:26:01
+* @Last Modified time: 2020-02-21 23:12:31
 */
 
 .order-list-table{
@@ -25,7 +25,7 @@
     color: #999;
 }
 .order-list-table .order-info .order-text{
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .order-list-table .order-info .order-num{
     font-weight: bold;

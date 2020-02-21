@@ -12,15 +12,20 @@
     <tr>
         <td colspan="5" class="order-info">
             <span class="order-text">
-                <span>订单号：</span>
+                <span>订单号:</span>
                 <a class="link order-num" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">{{orderNo}}</a>
             </span>
             <span class="order-text">{{createTime}}</span>
-            <span class="order-text">收件人：{{receiverName}}</span>
-            <span class="order-text">订单状态：{{statusDesc}}</span>
-            <span class="order-text">
-                <span>订单总价：</span>
+            <span class="order-text">收件人:{{receiverName}}</span>
+            <span class="order-text">状态:{{statusDesc}}</span>
+            <span class="order-text">总价:
                 <span class="order-total">￥{{payment}}</span>
+            </span>
+            <span class="order-text" >抵扣:
+                <span class="order-total">￥{{useIntegral}}</span>
+            </span>
+            <span class="order-text">应付:
+                <span class="order-total">￥{{remain}}</span>
             </span>
             <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">查看详情></a>
         </td>

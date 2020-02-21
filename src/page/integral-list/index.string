@@ -10,13 +10,13 @@
 {{#list}}
 <table class="integral-list-table integral-item">
     <tr>
-        <td class="integral-info">
+        <td class="integral-info integral-username">
             <span class="integral-text">{{username}}</span>
         </td>
-        <td class="integral-info">
+        <td class="integral-info integral-type">
             <span class="integral-text">{{type}}</span>
         </td>
-        <td class="integral-info">
+        <td class="integral-info integral-num">
             {{#add}}
             <span class="integral-add">{{num}}</span>
             {{/add}}
@@ -24,10 +24,10 @@
             <span class="integral-del">{{num}}</span>
             {{/add}}
         </td>
-        <td class="integral-info">
+        <td class="integral-info integral-remain-integral">
             <span class="integral-text">{{remainIntegral}}</span>
         </td>
-        <td class="integral-info">
+        <td class="integral-info integral-create-time">
             <span class="integral-text">{{createTime}}</span>
         </td>
     </tr>
