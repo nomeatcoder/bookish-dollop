@@ -27,7 +27,10 @@
             <span class="order-text">应付:
                 <span class="order-total">￥{{remain}}</span>
             </span>
-            <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">查看详情></a>
+            <span class="order-text order-opera">
+                <a class="link order-del">删除</a>
+                <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">查看详情></a>
+            </span>
         </td>
     </tr>
     {{#orderItemVoList}}

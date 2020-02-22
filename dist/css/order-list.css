@@ -139,7 +139,7 @@
 * @Author: nomeatcoder
 * @Date:   2019-12-02 20:25:00
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2020-02-21 23:12:31
+* @Last Modified time: 2020-02-21 23:31:04
 */
 
 .order-list-table{
@@ -171,7 +171,7 @@
     font-weight: bold;
     color: #c60023;
 }
-.order-list-table .order-info .order-detail{
+.order-list-table .order-info .order-opera{
     float: right;
 }
 

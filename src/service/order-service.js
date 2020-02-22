@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-12-02 19:39:44
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-12-02 19:43:01
+ * @Last Modified time: 2020-02-21 23:22:36
  */
 
 
@@ -51,6 +51,17 @@ var _order = {
     cancelOrder: function(orderNumber, resolve, reject) {
         _ajax.request({
             url: _ajax.getServerUrl('/order/cancel.do'),
+            data: {
+                orderNo: orderNumber
+            },
+            success: resolve,
+            error: reject
+        });
+    },
+    // 删除订单
+    delOrder: function(orderNumber, resolve, reject) {
+        _ajax.request({
+            url: _ajax.getServerUrl('/order/del.do'),
             data: {
                 orderNo: orderNumber
             },

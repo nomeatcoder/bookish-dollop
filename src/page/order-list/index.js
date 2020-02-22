@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-12-02 20:25:00
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2019-12-02 20:27:53
+ * @Last Modified time: 2020-02-21 23:22:37
  */
 
 
@@ -26,6 +26,20 @@ var page = {
     },
     init: function() {
         this.onLoad();
+        this.bindEvent();
+    },
+    bindEvent: function() {
+        var _this = this;
+        $(document).on('click', '.order-del', function() {
+            if (window.confirm('确实要删除该订单？')) {
+                _order.delOrder(_this.data.orderNumber, function(res) {
+                    _ajax.successTips('该订单删除成功');
+                    _this.loadOrderList();
+                }, function(errMsg) {
+                    _ajax.errorTips(errMsg);
+                });
+            }
+        });
     },
     onLoad: function() {
         this.loadOrderList();
