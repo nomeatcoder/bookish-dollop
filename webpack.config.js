@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-11-02 20:12:37
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2020-02-21 19:53:42
+ * @Last Modified time: 2020-03-01 16:06:13
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -92,7 +92,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm', '订单确认页')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list', '订单列表页')),
         new HtmlWebpackPlugin(getHtmlConfig('order-detail', '订单详情页')),
-        new HtmlWebpackPlugin(getHtmlConfig('payment', '订单支持页')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment', '订单支付页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '密码重置')),
