@@ -100,7 +100,7 @@
 * @Author: nomeatcoder
 * @Date:   2019-11-05 00:03:59
 * @Last Modified by:   nomeatcoder
-* @Last Modified time: 2019-11-26 19:25:05
+* @Last Modified time: 2020-03-06 00:37:01
 */
 
 /* keywords-list */
@@ -110,7 +110,7 @@
     height: 350px;
     padding: 10px 0;
     margin-right: 10px;
-    background: #666;
+    background: #999;
     color: #fff;
 }
 .keywords-list .keywords-item{
