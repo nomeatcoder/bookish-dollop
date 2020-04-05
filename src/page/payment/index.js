@@ -2,7 +2,7 @@
  * @Author: nomeatcoder
  * @Date:   2019-12-03 22:43:57
  * @Last Modified by:   nomeatcoder
- * @Last Modified time: 2020-03-07 23:36:51
+ * @Last Modified time: 2020-04-05 11:08:04
  */
 
 'use strict';
@@ -46,9 +46,9 @@ var page = {
         var _this = this;
         this.paymentTimer = window.setInterval(function() {
             _payment.getPaymentStatus(_this.data.orderNumber, function(res) {
-                if (res == true) {
+                if (res == 1) {
                     window.location.href = './result.html?type=payment&orderNumber=' + _this.data.orderNumber;
-                }else if (res == false){
+                }else if (res == 2){
                     window.location.href = './result.html?type=close&orderNumber=' + _this.data.orderNumber;
                 }
             });
